@@ -1,4 +1,4 @@
-import { BarChart, CartesianGrid, XAxis, YAxis, Tooltip, Bar, Legend } from "recharts";
+import { BarChart, CartesianGrid, XAxis, YAxis, Tooltip, Bar, Legend, ResponsiveContainer } from "recharts";
 import { getBook } from "../LocalStorage/localstorage";
 import { useLoaderData } from "react-router-dom";
 import { useState } from "react";
@@ -27,16 +27,18 @@ export default function PagesToRead() {
 
     return (
         <div className="mx-auto max-w-screen-2xl flex justify-center mt-28 ">
-            <div>
-                <BarChart width={1000} height={500} data={filteredBooks}>
-                    <CartesianGrid strokeDasharray="10 3" />
-                    <YAxis dataKey="totalPages" />
-                    <XAxis dataKey="bookName" />
-                    <Tooltip />
-                    <Legend />
-                    <Bar dataKey="BookName" fill="#8884d8" />
-                    <Bar dataKey="totalPages" fill="#82ca9d" />
-                </BarChart>
+            <div className="lg:w-[1000px] w-96">
+                <ResponsiveContainer width='80%' height={500}>
+                    <BarChart  data={filteredBooks}>
+                        <CartesianGrid strokeDasharray="10 3" />
+                        <YAxis dataKey="totalPages" />
+                        <XAxis dataKey="bookName" />
+                        <Tooltip />
+                        <Legend />
+                        <Bar dataKey="BookName" fill="#8884d8" />
+                        <Bar dataKey="totalPages" fill="#82ca9d" />
+                    </BarChart>
+                </ResponsiveContainer>
             </div>
         </div>
     )
