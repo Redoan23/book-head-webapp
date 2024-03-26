@@ -28,13 +28,13 @@ export default function PagesToRead() {
     return (
         <div className="mx-auto max-w-screen-2xl flex justify-center mt-28 ">
             <div>
-                <BarChart width={930} height={550} data={filteredBooks}>
-                    <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="bookName" />
+                <BarChart width={1000} height={500} data={filteredBooks}>
+                    <CartesianGrid strokeDasharray="10 3" />
                     <YAxis dataKey="totalPages" />
+                    <XAxis dataKey="bookName" />
                     <Tooltip />
                     <Legend />
-                    <Bar dataKey="bookName" fill="#8884d8" />
+                    <Bar dataKey="BookName" fill="#8884d8" />
                     <Bar dataKey="totalPages" fill="#82ca9d" />
                 </BarChart>
             </div>
