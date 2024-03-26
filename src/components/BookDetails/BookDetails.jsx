@@ -1,15 +1,35 @@
+
 import { useLoaderData, useParams } from "react-router-dom"
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer, toast, Flip, Slide } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { addBook, wishlistBooks } from "../LocalStorage/localstorage";
+
 
 export default function BookDetails() {
 
     const details = useLoaderData()
     console.log(details)
     const { id } = useParams()
+    const idInt=parseInt(id);
     const book = details.find(detail => detail.bookId == id)
-    console.log(book)
 
-    const notify = () => toast("Wow so easy !");
+
+
+
+    const notify2 = () =>
+        toast.info('Added to the Wishlist', {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+            transition: Flip,
+        });
+
+
 
 
     return (
@@ -46,13 +66,26 @@ export default function BookDetails() {
                         </div>
                     </div>
                     <div className="flex gap-5">
-                        <button className="btn  bg-orange-400 text-white hover:bg-transparent hover:border-orange-400 hover:text-orange-700" onClick={notify}>Read</button>
-                        <button className="btn bg-blue-400 text-white hover:bg-transparent hover:border-blue-400 hover:text-blue-700">Wishlist</button>
+                        <button onClick={() => { addBook(idInt) }} className="btn  bg-orange-400 text-white hover:bg-transparent hover:border-orange-400 hover:text-orange-700" >Read</button>
+                        <button onClick={() => { wishlistBooks(idInt) }} className="btn bg-blue-400 text-white hover:bg-transparent hover:border-blue-400 hover:text-blue-700">Wishlist</button>
                     </div>
                 </div>
             </div>
-            <ToastContainer />
-            
+
+
+            <ToastContainer
+                position="top-right"
+                autoClose={1000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="light"
+                transition:Flip />
         </div>
     )
+
 }

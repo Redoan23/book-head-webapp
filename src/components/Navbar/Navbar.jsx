@@ -5,8 +5,8 @@ export default function Navbar() {
 
     const links = <>
         <li><NavLink className="border-2 border-[#38bdf8] p-2 rounded-lg text-[#2563eb] bg-transparent" to='/'>Home</NavLink></li>
-        <li><NavLink className="border-2 border-[#38bdf8] p-2 rounded-lg text-[#2563eb] bg-transparent" to='ListedBook'>Listed Books</NavLink></li>
-        <li><NavLink className="border-2 border-[#38bdf8] p-2 rounded-lg text-[#2563eb] bg-transparent" to='read'>Pages to Read</NavLink></li>
+        <li><NavLink className="border-2 border-[#38bdf8] p-2 rounded-lg text-[#2563eb] bg-transparent" to='/listedbooks'>Listed Books</NavLink></li>
+        <li><NavLink className="border-2 border-[#38bdf8] p-2 rounded-lg text-[#2563eb] bg-transparent" to='/pagestoread'>Pages to Read</NavLink></li>
 
     </>
 

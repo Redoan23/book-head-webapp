@@ -5,6 +5,8 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Root from './components/Root/Root.jsx'
 import Home from './components/Home/Home.jsx'
 import BookDetails from './components/BookDetails/BookDetails.jsx'
+import PagesToRead from './components/PagesToRead/PagesToRead.jsx'
+import ListedBooks from './components/ListedBooks/ListedBooks.jsx'
 
 
 
@@ -23,6 +25,16 @@ const router= createBrowserRouter([
         path:'/:id',
         loader:()=>fetch(`public/books/books.json`) ,
         element:<BookDetails></BookDetails>
+      },
+      {
+        path:"/pagestoread",
+        loader:()=>fetch(`public/books/books.json`),
+        element:<PagesToRead></PagesToRead>
+      },
+      {
+        path:'/listedbooks',
+        loader:()=> fetch(`public/books/books.json`),
+        element:<ListedBooks></ListedBooks>
       }
     ]
   }
