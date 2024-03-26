@@ -1,0 +1,81 @@
+[
+    {
+      "bookId": 1,
+      "bookName": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "image": "https://i.ibb.co/3f5yk9S/1016369-OJK93-M0.jpg",
+      "review": "A mesmerizing tale of love, wealth, and the pursuit of the American Dream, set against the backdrop of the roaring 1920s.",
+      "totalPages": 180,
+      "rating": 4.5,
+      "category": "Fiction",
+      "tags": ["Romance", "Classic"],
+      "publisher": "Charles Scribner's Sons",
+      "yearOfPublishing": 1925
+    },
+    {
+      "bookId": 2,
+      "bookName": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "image": "https://i.ibb.co/3f5yk9S/1016369-OJK93-M0.jpg",
+      "review": "A poignant exploration of racial injustice and moral growth in the American South, through the eyes of a young girl.",
+      "totalPages": 281,
+      "rating": 4.8,
+      "category": "Fiction",
+      "tags": ["Social Justice", "Coming-of-age"],
+      "publisher": "J. B. Lippincott & Co.",
+      "yearOfPublishing": 1960
+    },
+    {
+      "bookId": 3,
+      "bookName": "1984",
+      "author": "George Orwell",
+      "image": "https://i.ibb.co/3f5yk9S/1016369-OJK93-M0.jpg",
+      "review": "A chilling dystopian novel that explores the dangers of totalitarianism and the erosion of individual freedom.",
+      "totalPages": 328,
+      "rating": 4.7,
+      "category": "Fiction",
+      "tags": ["Dystopian", "Political"],
+      "publisher": "Secker & Warburg",
+      "yearOfPublishing": 1949
+    },
+    {
+      "bookId": 4,
+      "bookName": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "image": "https://i.ibb.co/3f5yk9S/1016369-OJK93-M0.jpg",
+      "review": "A timeless portrayal of adolescent alienation and rebellion, capturing the essence of teenage angst.",
+      "totalPages": 277,
+      "rating": 4.3,
+      "category": "Fiction",
+      "tags": ["Coming-of-age", "American Literature"],
+      "publisher": "Little, Brown and Company",
+      "yearOfPublishing": 1951
+    },
+    {
+      "bookId": 5,
+      "bookName": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "image": "https://i.ibb.co/3f5yk9S/1016369-OJK93-M0.jpg",
+      "review": "A delightful comedy of manners, exploring themes of love, marriage, and social hierarchy in Georgian England.",
+      "totalPages": 279,
+      "rating": 4.6,
+      "category": "Fiction",
+      "tags": ["Romance", "Classic"],
+      "publisher": "T. Egerton, Whitehall",
+      "yearOfPublishing": 1813
+    },
+    {
+      "bookId": 6,
+      "bookName": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "image": "https://i.ibb.co/3f5yk9S/1016369-OJK93-M0.jpg",
+      "review": "An enchanting adventure tale set in Middle-earth, following the journey of Bilbo Baggins as he embarks on a quest to reclaim a lost treasure.",
+      "totalPages": 310,
+      "rating": 4.9,
+      "category": "Fantasy",
+      "tags": ["Adventure", "Middle-earth"],
+      "publisher": "George Allen & Unwin",
+      "yearOfPublishing": 1937
+    }
+  ]
+  
