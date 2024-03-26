@@ -26,18 +26,18 @@ export default function PagesToRead() {
 
 
     return (
-        <div>
-            {
-                filteredBooks.map(book => <BarChart width={730} height={250} data={book}>
+        <div className="mx-auto max-w-screen-2xl flex justify-center mt-28 ">
+            <div>
+                <BarChart width={930} height={550} data={filteredBooks}>
                     <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey={book.bookName} />
-                    <YAxis dataKey={book.totalPages} />
+                    <XAxis dataKey="bookName" />
+                    <YAxis dataKey="totalPages" />
                     <Tooltip />
                     <Legend />
-                    <Bar dataKey="book name" fill="#8884d8" />
-                    <Bar dataKey="read pages" fill="#82ca9d" />
-                </BarChart>)
-            }
+                    <Bar dataKey="bookName" fill="#8884d8" />
+                    <Bar dataKey="totalPages" fill="#82ca9d" />
+                </BarChart>
+            </div>
         </div>
     )
 }
