@@ -1,15 +1,4 @@
-import { useEffect, useState } from "react";
-import Books from "../Books/Books";
-
 export default function Banner() {
-
-    const[books, setBooks]=useState([])
-    useEffect(()=>{
-        fetch('public/books/books.json')
-        .then(res=>res.json())
-        .then(data=>setBooks(data))
-    } ,[])
-
 
     return (
         <div className=" mt-10">
@@ -21,17 +10,13 @@ export default function Banner() {
                         <button className="btn bg-blue-400 text-white">View The List</button>
                     </div>
                     <div className="flex-1">
-                        <img  src="https://i.ibb.co/MMFfyJx/34444444fsdf-fotor-bg-remover-2r024032605632.png" alt="" />
+                        <img src="https://i.ibb.co/MMFfyJx/34444444fsdf-fotor-bg-remover-2r024032605632.png" alt="" />
                     </div>
                 </div>
 
             </div>
 
-            <div>
-                {
-                    books.map(book=><Books book={book}></Books>)
-                }
-            </div>
+
         </div>
     )
 }

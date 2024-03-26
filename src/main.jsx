@@ -4,6 +4,7 @@ import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Root from './components/Root/Root.jsx'
 import Home from './components/Home/Home.jsx'
+import BookDetails from './components/BookDetails/BookDetails.jsx'
 
 
 
@@ -15,10 +16,13 @@ const router= createBrowserRouter([
     children:[
       {
         path:'/',
+        loader:()=>fetch('public/books/books.json'),
         element:<Home></Home>
       },
       {
-        
+        path:'/:id',
+        loader:()=>fetch(`public/books/books.json`) ,
+        element:<BookDetails></BookDetails>
       }
     ]
   }
