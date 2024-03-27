@@ -13,25 +13,6 @@ export default function BookDetails() {
     const idInt=parseInt(id);
     const book = details.find(detail => detail.bookId == id)
 
-
-
-
-    const notify2 = () =>
-        toast.info('Added to the Wishlist', {
-            position: "top-right",
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            theme: "colored",
-            transition: Flip,
-        });
-
-
-
-
     return (
         <div className=" max-w-screen-2xl mx-auto">
             <div className="flex flex-col lg:flex-row gap-10 p-8">

@@ -1,18 +1,14 @@
 import { IoMdPeople } from "react-icons/io";
 import { SlDocs } from "react-icons/sl";
 import { useEffect, useState } from "react"
-import { NavLink, useLoaderData } from "react-router-dom"
+import { Link, NavLink, useLoaderData, useParams } from "react-router-dom"
 import { getBook } from "../LocalStorage/localstorage"
 
 export default function ListedBooks() {
-
     const [readBooks, setReadBooks] = useState([])
-    console.log(readBooks)
-
     const data = useLoaderData()
     useEffect(() => {
         const stored = getBook()
-        console.log(stored)
         if (data.length > 0) {
             const booksRead = data.filter(dt => stored.includes(dt.bookId))
             setReadBooks(booksRead)
@@ -48,7 +44,7 @@ export default function ListedBooks() {
                                         <div className="flex gap-2 lg:gap-4 items-center">
                                             <p className=" rounded-xl bg-green-50 px-1 lg:px-2 text-green-600 py-2 lg:py-3">category:{book.category}</p>
                                             <p className="rounded-xl bg-orange-100 text-orange-400 px-1 lg:px-2 py-2 lg:py-3">Rating: {book.rating}</p>
-                                            <button className="btn text-white bg-green-500 rounded-xl">view details</button>
+                                            <Link to={`/${book.bookId}`}><button className="btn text-white bg-green-500 rounded-xl">view details</button></Link>
                                         </div>
                                     </div>
                                 </div>

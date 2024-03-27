@@ -1,0 +1,164 @@
+
+[
+        {
+            "id": 1,
+            "name": "J.K. Rowling",
+            "location": "United Kingdom",
+            "best_book": "Harry Potter and the Philosopher's Stone",
+            "img": "https://i.ibb.co/9882xMn/fakepic-for-website.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Haruki Murakami",
+            "location": "Japan",
+            "best_book": "Norwegian Wood",
+            "img": "https://i.ibb.co/9882xMn/fakepic-for-website.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Stephen King",
+            "location": "United States",
+            "best_book": "The Shining",
+            "img": "https://i.ibb.co/9882xMn/fakepic-for-website.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Agatha Christie",
+            "location": "United Kingdom",
+            "best_book": "Murder on the Orient Express",
+            "img": "https://i.ibb.co/9882xMn/fakepic-for-website.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Toni Morrison",
+            "location": "United States",
+            "best_book": "Beloved",
+            "img": "https://i.ibb.co/9882xMn/fakepic-for-website.jpg"
+        },
+        {
+            "id": 6,
+            "name": "Gabriel García Márquez",
+            "location": "Colombia",
+            "best_book": "One Hundred Years of Solitude",
+            "img": "https://i.ibb.co/9882xMn/fakepic-for-website.jpg"
+        },
+        {
+            "id": 7,
+            "name": "Jane Austen",
+            "location": "United Kingdom",
+            "best_book": "Pride and Prejudice",
+            "img": "https://i.ibb.co/9882xMn/fakepic-for-website.jpg"
+        },
+        {
+            "id": 8,
+            "name": "Leo Tolstoy",
+            "location": "Russia",
+            "best_book": "War and Peace",
+            "img": "https://i.ibb.co/9882xMn/fakepic-for-website.jpg"
+        },
+        {
+            "id": 9,
+            "name": "Virginia Woolf",
+            "location": "United Kingdom",
+            "best_book": "Mrs. Dalloway",
+            "img": "https://i.ibb.co/9882xMn/fakepic-for-website.jpg"
+        },
+        {
+            "id": 10,
+            "name": "Fyodor Dostoevsky",
+            "location": "Russia",
+            "best_book": "Crime and Punishment",
+            "img": "https://i.ibb.co/9882xMn/fakepic-for-website.jpg"
+        },
+        {
+            "id": 11,
+            "name": "Mark Twain",
+            "location": "United States",
+            "best_book": "The Adventures of Huckleberry Finn",
+            "img": "https://i.ibb.co/9882xMn/fakepic-for-website.jpg"
+        },
+        {
+            "id": 12,
+            "name": "George Orwell",
+            "location": "United Kingdom",
+            "best_book": "1984",
+            "img": "https://i.ibb.co/9882xMn/fakepic-for-website.jpg"
+        },
+        {
+            "id": 13,
+            "name": "Margaret Atwood",
+            "location": "Canada",
+            "best_book": "The Handmaid's Tale",
+            "img": "https://i.ibb.co/9882xMn/fakepic-for-website.jpg"
+        },
+        {
+            "id": 14,
+            "name": "Ernest Hemingway",
+            "location": "United States",
+            "best_book": "The Old Man and the Sea",
+            "img": "https://i.ibb.co/9882xMn/fakepic-for-website.jpg"
+        },
+        {
+            "id": 15,
+            "name": "Jane Austen",
+            "location": "United Kingdom",
+            "best_book": "Pride and Prejudice",
+            "img": "https://i.ibb.co/9882xMn/fakepic-for-website.jpg"
+        },
+        {
+            "id": 16,
+            "name": "Charles Dickens",
+            "location": "United Kingdom",
+            "best_book": "A Tale of Two Cities",
+            "img": "https://i.ibb.co/9882xMn/fakepic-for-website.jpg"
+        },
+        {
+            "id": 17,
+            "name": "J.R.R. Tolkien",
+            "location": "United Kingdom",
+            "best_book": "The Lord of the Rings",
+            "img": "https://i.ibb.co/9882xMn/fakepic-for-website.jpg"
+        },
+        {
+            "id": 18,
+            "name": "F. Scott Fitzgerald",
+            "location": "United States",
+            "best_book": "The Great Gatsby",
+            "img": "https://i.ibb.co/9882xMn/fakepic-for-website.jpg"
+        },
+        {
+            "id": 19,
+            "name": "Emily Brontë",
+            "location": "United Kingdom",
+            "best_book": "Wuthering Heights",
+            "img": "https://i.ibb.co/9882xMn/fakepic-for-website.jpg"
+        },
+        {
+            "id": 20,
+            "name": "Albert Camus",
+            "location": "France",
+            "best_book": "The Stranger",
+            "img": "https://i.ibb.co/9882xMn/fakepic-for-website.jpg"
+        },
+        {
+            "id": 21,
+            "name": "James Joyce",
+            "location": "Ireland",
+            "best_book": "Ulysses",
+            "img": "https://i.ibb.co/9882xMn/fakepic-for-website.jpg"
+        },
+        {
+            "id": 22,
+            "name": "John Steinbeck",
+            "location": "United States",
+            "best_book": "The Grapes of Wrath",
+            "img": "https://i.ibb.co/9882xMn/fakepic-for-website.jpg"
+        },
+        {
+            "id": 23,
+            "name": "T.S. Eliot",
+            "location": "United States",
+            "best_book": "The Waste Land",
+            "img": "https://i.ibb.co/9882xMn/fakepic-for-website.jpg"
+        }
+    ]

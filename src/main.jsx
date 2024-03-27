@@ -8,6 +8,7 @@ import BookDetails from './components/BookDetails/BookDetails.jsx'
 import PagesToRead from './components/PagesToRead/PagesToRead.jsx'
 import ListedBooks from './components/ListedBooks/ListedBooks.jsx'
 import Error from './components/Error/Error.jsx'
+import Author from './components/Author/Author.jsx'
 
 
 
@@ -37,6 +38,12 @@ const router = createBrowserRouter([
         path: '/listedbooks',
         loader: () => fetch(`public/books/books.json`),
         element: <ListedBooks></ListedBooks>
+      },
+      {
+        path:'/authors',
+        loader:()=>fetch(`public/authors/authors.json`),
+        element:<Author></Author>
+        
       }
     ]
   }

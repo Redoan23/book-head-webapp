@@ -18,7 +18,7 @@ const addBook = id => {
         localStorage.setItem('stored-books', JSON.stringify(book))
         toast.success('Added to the Read List', {
             position: "top-right",
-            autoClose: 1000,
+            autoClose: 2000,
             hideProgressBar: false,
             closeOnClick: true,
             pauseOnHover: true,
@@ -32,7 +32,7 @@ const addBook = id => {
     if (find) {
         toast.warning('Already Added to the Read List', {
             position: "top-right",
-            autoClose: 1000,
+            autoClose: 2000,
             hideProgressBar: false,
             closeOnClick: true,
             pauseOnHover: true,
@@ -65,7 +65,7 @@ const wishlistBooks = id => {
         localStorage.setItem('wishlist-books', JSON.stringify(stored))
         toast.success('Added to the Wishlist', {
             position: "top-right",
-            autoClose: 1000,
+            autoClose: 2000,
             hideProgressBar: false,
             closeOnClick: true,
             pauseOnHover: true,
@@ -78,7 +78,7 @@ const wishlistBooks = id => {
     else if (get && !getList.includes(id)) {
         toast.warning('You have added this to wishlist', {
             position: "top-right",
-            autoClose: 1000,
+            autoClose: 2000,
             hideProgressBar: false,
             closeOnClick: true,
             pauseOnHover: true,
@@ -92,7 +92,7 @@ const wishlistBooks = id => {
     else {
         toast.warning('You have already read this book', {
             position: "top-right",
-            autoClose: 1000,
+            autoClose: 2000,
             hideProgressBar: false,
             closeOnClick: true,
             pauseOnHover: true,

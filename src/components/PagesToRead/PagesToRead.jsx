@@ -27,7 +27,7 @@ export default function PagesToRead() {
 
     return (
         <div className="mx-auto max-w-screen-2xl flex justify-center mt-28 ">
-            <div className="lg:w-[1000px] w-96">
+            <div className="lg:w-[1400px] mx-auto flex justify-center w-96">
                 <ResponsiveContainer width='80%' height={500}>
                     <BarChart  data={filteredBooks}>
                         <CartesianGrid strokeDasharray="10 3" />
