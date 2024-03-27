@@ -8,7 +8,6 @@ import { addBook, wishlistBooks } from "../LocalStorage/localstorage";
 export default function BookDetails() {
 
     const details = useLoaderData()
-    console.log(details)
     const { id } = useParams()
     const idInt=parseInt(id);
     const book = details.find(detail => detail.bookId == id)
