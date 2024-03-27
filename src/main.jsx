@@ -9,6 +9,7 @@ import PagesToRead from './components/PagesToRead/PagesToRead.jsx'
 import ListedBooks from './components/ListedBooks/ListedBooks.jsx'
 import Error from './components/Error/Error.jsx'
 import Author from './components/Author/Author.jsx'
+import Offer from './components/Offer/Offer.jsx'
 
 
 
@@ -44,6 +45,11 @@ const router = createBrowserRouter([
         loader:()=>fetch(`public/authors/authors.json`),
         element:<Author></Author>
         
+      },
+      {
+        path:'/offers&discounts',
+        element:<Offer></Offer>
+
       }
     ]
   }

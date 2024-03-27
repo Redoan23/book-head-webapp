@@ -7,7 +7,7 @@ export default function Navbar() {
         <li><NavLink className="border-2 border-[#38bdf8] p-2 rounded-lg text-[#2563eb] bg-transparent" to='/'>Home</NavLink></li>
         <li><NavLink className="border-2 border-[#38bdf8] p-2 rounded-lg text-[#2563eb] bg-transparent" to='/listedbooks'>Listed Books</NavLink></li>
         <li><NavLink className="border-2 border-[#38bdf8] p-2 rounded-lg text-[#2563eb] bg-transparent" to='/pagestoread'>Pages to Read</NavLink></li>
-        <li><NavLink className="border-2 border-[#38bdf8] p-2 rounded-lg text-[#2563eb] bg-transparent" to='/contact'>Contact</NavLink></li>
+        <li><NavLink className="border-2 border-[#38bdf8] p-2 rounded-lg text-[#2563eb] bg-transparent" to='/offers&discounts'>Offers & Discounts</NavLink></li>
         <li><NavLink className="border-2 border-[#38bdf8] p-2 rounded-lg text-[#2563eb] bg-transparent" to='/authors'>Authors</NavLink></li>
 
     </>

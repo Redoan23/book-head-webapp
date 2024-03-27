@@ -6,11 +6,11 @@ export default function Author() {
     return (
         <div className=" mt-20 bg-[url('https://i.ibb.co/ZHh64GS/1182.jpg')] w-full h-full bg-cover bg-no-repeat ">
 
-            <div className="grid grid-cols-3 place-items-center gap-10 pt-10">
+            <div className="grid grid-cols-1 lg:grid-cols-3 place-items-center gap-7 pt-10">
                 {
                     authors.map(author =>
                         <div className="">
-                            <div className="flex items-center gap-10 w-[350px] h-[120px] px-2 py-8 rounded-xl border-blue-500 border-2 bg-[#fff6]">
+                            <div className="flex items-center gap-10 w-[350px] h-[120px] px-2 py-8 rounded-xl border-blue-500 border-2 bg-[#fff7] shadow-xl">
                                 <div className="w-20">
                                     <img className=" rounded-xl" src={author.img} alt="" />
                                 </div>
@@ -19,7 +19,7 @@ export default function Author() {
   
                                     <p ><span className="font-bold">Country:</span> {author.location}</p>
                                     <hr />
-                                    <p ><span className="font-bold">Best book:</span> <span className=" text-blue-400">{author.best_book}</span></p>
+                                    <p ><span className="font-bold">Best book:</span> <span className=" text-orange-300 shadow-sm drop-shadow-md">{author.best_book}</span></p>
                                 </div>
                             </div>
                         </div>
