@@ -51,9 +51,13 @@ export default function BasicTabs() {
     // old stuffdfsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
     const [readBooks, setReadBooks] = useState([])
     const [wishlistBooks, setWishlistBooks] = useState([])
-    console.log(wishlistBooks)
+    const [sorted, setSorted] = useState([])
+    // const [sortedDone, setSortedDone] = useState([])
+    // console.log(sortedDone)
     const data = useLoaderData()
+
     useEffect(() => {
+        setSorted(data)
         const stored = getBook()
         const wishlist = getWishlist()
         if (data.length > 0) {
@@ -66,6 +70,30 @@ export default function BasicTabs() {
         }
 
     }, [])
+
+    const handleSort = (finder) => {
+        if (finder === "none") {
+            const sortedData = [...sorted]
+            setReadBooks(sortedData)
+            setWishlistBooks(sortedData)
+        }
+        if (finder === "rating") {
+            const sortedData = [...sorted].sort((a, b) => b.rating - a.rating)
+            setReadBooks(sortedData)
+            setWishlistBooks(sortedData)
+        }
+        if (finder === "totalPages") {
+            const sortedData = [...sorted].sort((a, b) => b.totalPages - a.totalPages)
+            setReadBooks(sortedData)
+            setWishlistBooks(sortedData)
+        }
+        if (finder === "yearOfPublishing") {
+            const sortedData = [...sorted].sort((a, b) => b.yearOfPublishing - a.yearOfPublishing)
+            setReadBooks(sortedData)
+            setWishlistBooks(sortedData)
+        }
+
+    }
 
     // old stuffdsfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
 
@@ -82,10 +110,10 @@ export default function BasicTabs() {
                 <div className="dropdown dropdown-hover">
                     <div tabIndex={0} role="button" className="btn m-1">Sort By <IoMdArrowDropdownCircle /></div>
                     <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
-                        <li><a>All</a></li>
-                        <li><a>Rating</a></li>
-                        <li><a>Number of Pages</a></li>
-                        <li><a>Published Year</a></li>
+                        <li><a onClick={() => { handleSort('none') }}>Default</a></li>
+                        <li><a onClick={() => { handleSort('rating') }}>Rating</a></li>
+                        <li><a onClick={() => { handleSort('totalPages') }}>Number of Pages</a></li>
+                        <li onClick={() => { handleSort('yearOfPublishing') }}><a>Published Year</a></li>
                     </ul>
                 </div>
             </div>
