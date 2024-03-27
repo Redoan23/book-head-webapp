@@ -1,8 +1,11 @@
-# React + Vite
+# Book Head
+Bookstore Page
+#features & Charactaristics
+.easy to find what is need
+.clean UI
+.Author Page
+.Adding books to wishlist or already read
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Here is the live page link:
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- https://app.netlify.com/sites/dancing-sfogliatella-bc6853/deploys/660480d2c42a1a539a7a89e5
