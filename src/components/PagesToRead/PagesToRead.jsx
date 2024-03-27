@@ -30,12 +30,12 @@ export default function PagesToRead() {
             <div className="lg:w-[1400px] mx-auto flex justify-center w-96">
                 <ResponsiveContainer width='80%' height={500}>
                     <BarChart  data={filteredBooks}>
-                        <CartesianGrid strokeDasharray="10 3" />
+                        <CartesianGrid strokeDasharray="7 3" />
                         <YAxis dataKey="totalPages" />
                         <XAxis dataKey="bookName" />
                         <Tooltip />
                         <Legend />
-                        <Bar dataKey="BookName" fill="#8884d8" />
+                        <Bar dataKey="bookName" fill="coral" />
                         <Bar dataKey="totalPages" fill="#82ca9d" />
                     </BarChart>
                 </ResponsiveContainer>
