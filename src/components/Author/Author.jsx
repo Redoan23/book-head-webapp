@@ -3,6 +3,13 @@ import { useLoaderData } from "react-router-dom"
 export default function Author() {
     const authors = useLoaderData()
     console.log(authors)
+
+    const handleClick=(name)=>{
+        const url=`https://www.google.com/search?q=${name}`
+        // window.location.href = url
+        // window.open(url, '_blank')
+    }
+
     return (
         <div>
             
@@ -11,7 +18,7 @@ export default function Author() {
                 <div className="grid grid-cols-1 lg:grid-cols-3 place-items-center gap-7 pt-20">
                     {
                         authors.map(author =>
-                            <div className="">
+                            <div className=" hover:cursor-pointer" onClick={()=>{handleClick(author.name)}}>
                                 <div className="flex items-center gap-5 w-[350px] lg:w-[350px] h-[120px] px-2 py-8 rounded-xl border-blue-500 border-2 bg-[#fff3] shadow-xl">
                                     <div className="w-20">
                                         <img className=" rounded-xl" src={author.img} alt="" />

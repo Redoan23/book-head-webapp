@@ -12,7 +12,7 @@ export default function Banner() {
                         <Link to='/listedbooks' className="pt-8"><button  className="btn bg-blue-400 text-white">View The List</button></Link>
                     </div>
                     <div className="flex-1">
-                        <img src="https://i.ibb.co/MMFfyJx/34444444fsdf-fotor-bg-remover-2r024032605632.png" alt="" />
+                        <img src="https://i.ibb.co/QjPkSbC/34444444fsdf-fotor-bg-remover-2r024032605632-fotor-bg-remover-2024032812152.png" alt="" />
                     </div>
                 </div>
 

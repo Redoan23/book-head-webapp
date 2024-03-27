@@ -129,7 +129,7 @@ export default function BasicTabs() {
                                 <section>
                                     <div className="space-y-10 mt-20">
                                         {
-                                            readBooks.map(book =>
+                                            readBooks.map( book =>
                                                 <div className="flex flex-col lg:flex-row gap-16 shadow-lg rounded-lg p-5">
                                                     <div className="w-64">
                                                         <img className="rounded-xl " src={book.image} alt="" />

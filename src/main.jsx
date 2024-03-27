@@ -10,6 +10,7 @@ import ListedBooks from './components/ListedBooks/ListedBooks.jsx'
 import Error from './components/Error/Error.jsx'
 import Author from './components/Author/Author.jsx'
 import Offer from './components/Offer/Offer.jsx'
+import BasicTabs from './components/ListedBooks/ListedBooks.jsx'
 
 
 
@@ -38,7 +39,8 @@ const router = createBrowserRouter([
       {
         path: '/listedbooks',
         loader: () => fetch(`public/books/books.json`),
-        element: <ListedBooks></ListedBooks>
+        // element: <ListedBooks></ListedBooks>
+        element:<BasicTabs></BasicTabs>
       },
       {
         path:'/authors',
