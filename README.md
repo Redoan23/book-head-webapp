@@ -1,6 +1,7 @@
 # Book Head
 Bookstore Page
 #features & Charactaristics
+Bullet List
 .easy to find what is need
 .clean UI
 .Author Page
