@@ -52,8 +52,6 @@ export default function BasicTabs() {
     const [readBooks, setReadBooks] = useState([])
     const [wishlistBooks, setWishlistBooks] = useState([])
     const [sorted, setSorted] = useState([])
-    // const [sortedDone, setSortedDone] = useState([])
-    // console.log(sortedDone)
     const data = useLoaderData()
 
     useEffect(() => {
@@ -123,7 +121,6 @@ export default function BasicTabs() {
                         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
                             <Tab label="Read Books" {...a11yProps(0)} />
                             <Tab label="Wishlist Books" {...a11yProps(1)} />
-                            {/* <Tab label="Item Three" {...a11yProps(2)} /> */}
                         </Tabs>
                     </Box>
                     <CustomTabPanel value={value} index={0}>
@@ -202,9 +199,6 @@ export default function BasicTabs() {
                             </div>
                         </div>
                     </CustomTabPanel>
-                    {/* <CustomTabPanel value={value} index={2}>
-                Item Three
-            </CustomTabPanel> */}
                 </Box>
             </div>
         </div>
@@ -213,6 +207,10 @@ export default function BasicTabs() {
 
 
 // material ui ends here
+
+
+
+//  this below is my old data
 
 // export default function ListedBooks() {
 //     const [readBooks, setReadBooks] = useState([])
