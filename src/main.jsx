@@ -18,39 +18,40 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <Root></Root>,
-    errorElement:<Error></Error>,
+    
+    errorElement: <Error></Error>,
 
     children: [
       {
         path: '/',
-        loader: () => fetch('public/books/books.json'),
+        loader: () => fetch('/books/books.json'),
         element: <Home></Home>,
       },
       {
         path: '/:id',
-        loader: () => fetch(`public/books/books.json`),
+        loader: () => fetch(`/books/books.json`),
         element: <BookDetails></BookDetails>
       },
       {
         path: "/pagestoread",
-        loader: () => fetch(`public/books/books.json`),
+        loader: () => fetch(`/books/books.json`),
         element: <PagesToRead></PagesToRead>
       },
       {
         path: '/listedbooks',
-        loader: () => fetch(`public/books/books.json`),
+        loader: () => fetch(`/books/books.json`),
         // element: <ListedBooks></ListedBooks>
-        element:<BasicTabs></BasicTabs>
+        element: <BasicTabs></BasicTabs>
       },
       {
-        path:'/authors',
-        loader:()=>fetch(`public/authors/authors.json`),
-        element:<Author></Author>
-        
+        path: '/authors',
+        loader: () => fetch(`/authors/authors.json`),
+        element: <Author></Author>
+
       },
       {
-        path:'/offers&discounts',
-        element:<Offer></Offer>
+        path: '/offers&discounts',
+        element: <Offer></Offer>
 
       }
     ]

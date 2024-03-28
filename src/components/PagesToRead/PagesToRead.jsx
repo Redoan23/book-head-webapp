@@ -1,11 +1,11 @@
-import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, ResponsiveContainer,Tooltip } from 'recharts';
+import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, ResponsiveContainer, Tooltip } from 'recharts';
 import { getBook } from "../LocalStorage/localstorage";
 import { useLoaderData } from "react-router-dom";
 
 
 
 
-const colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', 'red', '#Fd2801', 'skyblue', 'maroon', 'teal', 'salmon','rose', 'green'];
+const colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', 'red', '#Fd2801', 'skyblue', 'maroon', 'teal', 'salmon', 'rose', 'green'];
 
 const getPath = (x, y, width, height) => {
     return `M${x},${y + height}C${x + width / 3},${y + height} ${x + width / 2},${y + height / 3}
@@ -32,7 +32,9 @@ export default function PagesToRead() {
     console.log(filteredBooks)
 
 
-
+    if (filteredBooks.length === 0) {
+        
+    }
 
 
     return (
